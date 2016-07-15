@@ -28,15 +28,5 @@ public class UserRepository {
         }
         return null;
     }
-    @PostConstruct
-    public void init(){
-        User user1=new User(1,"Florin");
-        User user2=new User(2,"Paul");
-        users.add(user1);
-        users.add(user2);
-
-        RankUser rankUser1=new RankUser(users,1,"admin");
-    }
-
 
 }
